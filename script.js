@@ -10,6 +10,30 @@ const CONFIG = {
     businessPhone: '+393455363479'
 };
 
+// Ken Burns Slider - Fixed Version
+document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.kb-slide');
+    
+    // Check if slides exist
+    if (slides.length > 0) {
+        function changeSlide() {
+            // Remove active from current slide
+            slides[currentSlide].classList.remove('active');
+            
+            // Move to next slide
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Add active to new slide
+            slides[currentSlide].classList.add('active');
+        }
+        
+        // Auto-change every 5 seconds
+        setInterval(changeSlide, 5000);
+    }
+});
+
+
 // ===== DOM ELEMENTS =====
 const elements = {
     mainNav: document.getElementById('mainNav'),
