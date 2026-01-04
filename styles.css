@@ -1135,66 +1135,297 @@ button {
 }
 
 /* ===== WHY CHOOSE SECTION ===== */
-.why-choose-section {
-    padding: var(--space-24) 0;
-    background: var(--gradient-primary);
+.why-choose-pro {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFBF5 100%);
+    position: relative;
 }
 
-.section-label.light {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--white);
-}
-
-.section-heading.light {
-    color: var(--white);
-}
-
-.section-description.light {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-8);
-}
-
-.benefit-card {
-    background: var(--white);
-    padding: var(--space-8);
-    border-radius: var(--radius-2xl);
+/* Professional Header */
+.section-header-pro {
     text-align: center;
-    transition: var(--transition-base);
+    margin-bottom: 60px;
 }
 
-.benefit-card:hover {
+.label-pro {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #FFC107, #FF9800);
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.heading-pro {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1A1A1A;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.subtitle-pro {
+    font-size: 18px;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Benefits Grid */
+.benefits-grid-pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Professional Benefit Card */
+.benefit-card-pro {
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.benefit-card-pro:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl);
+    box-shadow: 0 12px 40px rgba(255, 193, 7, 0.2);
 }
 
-.benefit-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto var(--space-5);
-    background: var(--gradient-primary);
-    border-radius: var(--radius-xl);
+/* Card Image */
+.card-image-wrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.benefit-card-pro:hover .card-img {
+    transform: scale(1.08);
+}
+
+/* Image Gradient Overlay */
+.image-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.3) 100%);
+}
+
+/* Icon */
+.card-icon-pro {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #FFC107, #FF9800);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
-    font-size: var(--text-4xl);
+    color: #FFFFFF;
+    font-size: 26px;
+    box-shadow: 0 8px 24px rgba(255, 193, 7, 0.4);
+    z-index: 10;
+    transition: all 0.3s ease;
 }
 
-.benefit-card h3 {
-    font-size: var(--text-xl);
+.benefit-card-pro:hover .card-icon-pro {
+    transform: translateX(-50%) translateY(-4px) scale(1.1);
+    box-shadow: 0 12px 32px rgba(255, 193, 7, 0.5);
+}
+
+/* Card Body */
+.card-body-pro {
+    padding: 48px 24px 28px;
+    text-align: center;
+}
+
+/* Card Tag */
+.card-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
     font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: var(--space-3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
 }
 
-.benefit-card p {
-    color: var(--gray-600);
+.tag-yellow {
+    background: rgba(255, 193, 7, 0.15);
+    color: #F57C00;
+}
+
+.tag-green {
+    background: rgba(76, 175, 80, 0.15);
+    color: #2E7D32;
+}
+
+.tag-blue {
+    background: rgba(33, 150, 243, 0.15);
+    color: #1565C0;
+}
+
+.tag-orange {
+    background: rgba(255, 152, 0, 0.15);
+    color: #E65100;
+}
+
+.tag-red {
+    background: rgba(244, 67, 54, 0.15);
+    color: #C62828;
+}
+
+/* Card Title */
+.card-body-pro h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.benefit-card-pro:hover h3 {
+    color: #F57C00;
+}
+
+/* Card Description */
+.card-body-pro p {
+    font-size: 15px;
+    color: #666666;
     line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .benefits-grid-pro {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose-pro {
+        padding: 60px 0;
+    }
+
+    .heading-pro {
+        font-size: 32px;
+    }
+
+    .subtitle-pro {
+        font-size: 16px;
+    }
+
+    .benefits-grid-pro {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card-image-wrap {
+        height: 180px;
+    }
+
+    .card-icon-pro {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+        top: 145px;
+    }
+
+    .card-body-pro {
+        padding: 40px 20px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-pro {
+        font-size: 28px;
+    }
+
+    .label-pro {
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+
+    .card-body-pro h3 {
+        font-size: 20px;
+    }
+
+    .card-body-pro p {
+        font-size: 14px;
+    }
+}
+
+/* Accessibility */
+.benefit-card-pro:focus {
+    outline: 3px solid #FFC107;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .benefit-card-pro,
+    .card-img,
+    .card-icon-pro {
+        transition: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .why-choose-pro {
+        background: white;
+    }
+
+    .benefit-card-pro {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #E0E0E0;
+    }
+}
+
+/* Performance Optimization */
+.benefit-card-pro {
+    will-change: transform;
+}
+
+/* Loading Animation */
+.card-img {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* ===== FLEET SECTION ===== */
