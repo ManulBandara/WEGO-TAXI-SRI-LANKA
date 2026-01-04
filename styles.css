@@ -1480,7 +1480,7 @@ button {
 /* Featured Card */
 .fleet-card-pro.featured-fleet {
     border: 3px solid var(--primary-yellow);
-    background: linear-gradient(135deg, #FFFBF0 0%, #FFFFFF 100%);
+    background: linear-gradient(135deg, #f0fff2 0%, #FFFFFF 100%);
 }
 
 .featured-ribbon {
@@ -1825,6 +1825,7 @@ button {
         height: 200px;
     }
 }
+
 
 /* ===== TESTIMONIALS SECTION ===== */
 /* ===== REVIEWS BELOW TRIPADVISOR ===== */
