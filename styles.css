@@ -2733,14 +2733,43 @@ button {
         justify-content: center;
     }
 }
+
+
 /* ===== TRIPADVISOR TOP BAR BADGE ===== */
+
 .tripadvisor-top-badge {
     display: flex;
     align-items: center;
     padding: var(--space-2) var(--space-4);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+}
+
+.tripadvisor-top-badge:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.tripadvisor-top-badge img {
+    height: 24px;
+    width: auto;
+    filter: brightness(1.2) contrast(1.1);
     transition: var(--transition-base);
+}
+
+.tripadvisor-top-badge:hover img {
+    filter: brightness(1.3) contrast(1.2);
+}
+
+.tripadvisor-top-badge {
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
 }
 
 .tripadvisor-top-badge:hover {
