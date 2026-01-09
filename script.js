@@ -603,3 +603,36 @@ window.addEventListener('error', (e) => {
 console.log('✅ Wego Taxi Website Loaded Successfully!');
 console.log('🖼️ Hero image slider active with 5 beautiful Sri Lankan destinations');
 console.log('⏱️ Auto-rotating every 5 seconds');
+
+// ===== FAQ ACCORDION FUNCTIONALITY =====
+function toggleFAQ(button) {
+    const faqItem = button.parentElement;
+    const isActive = faqItem.classList.contains('active');
+    
+    // Close all other FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+        const btn = item.querySelector('.faq-question');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+    
+    // Toggle current item
+    if (!isActive) {
+        faqItem.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
+    }
+}
+
+// Make function globally available
+window.toggleFAQ = toggleFAQ;
+
+// Close FAQ when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.faq-item')) {
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+            const btn = item.querySelector('.faq-question');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+    }
+});
