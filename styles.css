@@ -2096,7 +2096,7 @@ button {
     box-shadow: var(--shadow-md);
 }
 
-/* ===== FOOTER WITH LOGO ===== */
+/* ===== FOOTER ===== */
 .main-footer {
     background: var(--gray-900);
     color: var(--white);
@@ -2114,44 +2114,28 @@ button {
     max-width: 400px;
 }
 
-/* Footer Logo with Image */
 .footer-logo {
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--space-4);
 }
 
-.footer-logo-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    border-radius: var(--radius-lg);
-    background: rgba(255, 193, 7, 0.1);
-    padding: var(--space-2);
-}
-
-.footer-logo-text h3 {
+.footer-logo h3 {
     font-size: var(--text-2xl);
     font-weight: 900;
     color: var(--white);
-    line-height: 1;
-    margin-bottom: var(--space-1);
 }
 
-.footer-logo-text span {
+.footer-logo span {
     font-size: var(--text-xs);
-    color: var(--gray-400);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: var(--gray-500);
 }
 
 .footer-tagline {
     color: var(--gray-400);
     line-height: 1.7;
     margin-bottom: var(--space-5);
-    font-size: var(--text-sm);
 }
 
 .footer-social {
@@ -2168,7 +2152,6 @@ button {
     background: rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-lg);
     color: var(--white);
-    font-size: var(--text-base);
     transition: var(--transition-base);
 }
 
@@ -2191,7 +2174,6 @@ button {
     color: var(--gray-400);
     margin-bottom: var(--space-3);
     transition: var(--transition-base);
-    font-size: var(--text-sm);
 }
 
 .footer-links-col a:hover {
@@ -2205,13 +2187,10 @@ button {
     gap: var(--space-3);
     margin-bottom: var(--space-4);
     color: var(--gray-400);
-    font-size: var(--text-sm);
 }
 
 .footer-contact-item i {
     color: var(--primary-yellow);
-    font-size: var(--text-base);
-    width: 20px;
 }
 
 .footer-bottom {
@@ -2237,49 +2216,10 @@ button {
 .footer-legal a {
     color: var(--gray-500);
     font-size: var(--text-sm);
-    transition: var(--transition-base);
 }
 
 .footer-legal a:hover {
     color: var(--primary-yellow);
-}
-
-/* Mobile Responsive */
-@media (max-width: 1024px) {
-    .footer-main {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--space-8);
-    }
-
-    .footer-about-col {
-        grid-column: span 2;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: var(--space-8);
-    }
-
-    .footer-about-col {
-        grid-column: span 1;
-    }
-
-    .footer-logo-img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .footer-logo-text h3 {
-        font-size: var(--text-xl);
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* ===== WHATSAPP FLOAT ===== */
@@ -3566,19 +3506,19 @@ button {
     .faq-question {
         padding: var(--space-4);
     }
-
+    
     .faq-question h3 {
         font-size: var(--text-base);
     }
-
+    
     .faq-item.active .faq-answer {
         padding: 0 var(--space-4) var(--space-4) var(--space-4);
     }
-
+    
     .faq-cta {
         padding: var(--space-6);
     }
-
+    
     .faq-cta p {
         font-size: var(--text-lg);
     }
