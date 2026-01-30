@@ -3786,3 +3786,123 @@ button {
         border-width: 4px;
     }
 }
+
+/* HERO BASE */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SLIDES */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* IMAGE CONTROL */
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* prevents distortion */
+    object-position: center;
+}
+
+/* OVERLAY FOR READABILITY */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.45));
+    z-index: 3;
+}
+
+/* CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 5;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* TEXT */
+.hero-text h1 {
+    color: #fff;
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.hero-text p {
+    color: #f1f1f1;
+    max-width: 600px;
+    margin-top: 15px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* CTA */
+.hero-btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 14px 28px;
+    background: #ffb300;
+    color: #000;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero-content {
+        align-items: flex-end;
+        padding-bottom: 80px;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
