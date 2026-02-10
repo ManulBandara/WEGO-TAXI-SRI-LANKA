@@ -1,547 +1,336 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Explore Sri Lanka's beauty through our photo gallery. View stunning destinations, cultural sites, beaches, and wildlife from Wego Taxi tours.">
+<!doctypehtml>
+    <html lang=en>
+    <meta charset=UTF-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta
+        content="Explore Sri Lanka's beauty through our photo gallery. View stunning destinations, cultural sites, beaches, and wildlife from Wego Taxi tours."
+        name=description>
     <title>Photo Gallery - Wego Taxi Sri Lanka | Explore Sri Lanka</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-
-    <!-- Google Fonts -->
+    <link href=favicon.png rel=icon type=image/png>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Gallery CSS -->
-    <link rel="stylesheet" href="gallery.css">
-</head>
-
-<body>
-
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <a href="tel:+393455363479" class="top-link">
-                        <i class="fas fa-phone"></i>
-                        <span>+39 345 536 3479</span>
-                    </a>
-                    <a href="mailto:Info@wegosrilanka.com" class="top-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Info@wegosrilanka.com</span>
-                    </a>
-                </div>
-                <div class="top-bar-right">
-                    <span class="top-text">
-                        <i class="fas fa-clock"></i>
-                        Available 24/7
-                    </span>
-                    <div class="social-icons-top">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
-                    </div>
+        rel=stylesheet>
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css rel=stylesheet>
+    <link href=styles.css rel=stylesheet>
+    <link href=gallery.css rel=stylesheet>
+    <div class=top-bar>
+        <div class=container>
+            <div class=top-bar-content>
+                <div class=top-bar-left><a href=tel:+393455363479 class=top-link><i class="fas fa-phone"></i> <span>+39
+                            345 536 3479</span> </a><a href=mailto:Info@wegosrilanka.com class=top-link><i
+                            class="fas fa-envelope"></i> <span>Info@wegosrilanka.com</span></a></div>
+                <div class=top-bar-right><span class=top-text><i class="fas fa-clock"></i> Available 24/7</span>
+                    <div class=social-icons-top><a href=# aria-label=Facebook><i class="fab fa-facebook-f"></i></a> <a
+                            href=# aria-label=Instagram><i class="fab fa-instagram"></i></a> <a href=#
+                            aria-label=TripAdvisor><i class="fab fa-tripadvisor"></i></a></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Main Navigation -->
-    <nav class="main-nav" id="mainNav">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">
-                        <i class="fas fa-taxi"></i>
-                    </div>
-                    <div class="logo-text">
-                        <h1>WEGO TAXI</h1>
-                        <span>Sri Lanka Tours</span>
+    <nav class=main-nav id=mainNav>
+        <div class=container>
+            <div class=nav-wrapper><a href=index.html class=logo-container>
+                    <div class=logo-icon><i class="fas fa-taxi"></i></div>
+                    <div class=logo-text>
+                        <h1>WEGO TAXI</h1><span>Sri Lanka Tours</span>
                     </div>
                 </a>
-
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html#home" class="nav-item">Home</a></li>
-                    <li><a href="index.html#about" class="nav-item">About</a></li>
-                    <li><a href="index.html#services" class="nav-item">Services</a></li>
-                    <li><a href="index.html#tours" class="nav-item">Tours</a></li>
-                    <li><a href="gallery.html" class="nav-item active">Gallery</a></li>
-                    <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+                <ul class=nav-menu id=navMenu>
+                    <li><a href=index.html#home class=nav-item>Home</a>
+                    <li><a href=index.html#about class=nav-item>About</a>
+                    <li><a href=index.html#services class=nav-item>Services</a>
+                    <li><a href=index.html#tours class=nav-item>Tours</a>
+                    <li><a href=gallery.html class="nav-item active">Gallery</a>
+                    <li><a href=index.html#contact class=nav-item>Contact</a>
                 </ul>
-
-                <div class="nav-actions">
-                    <button onclick="openWhatsApp()" class="btn-book-now">
-                        <i class="fab fa-whatsapp"></i>
-                        Book Now
-                    </button>
-                    <button class="mobile-menu-btn" id="mobileMenuBtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+                <div class=nav-actions><button class=btn-book-now onclick=openWhatsApp()><i class="fab fa-whatsapp"></i>
+                        Book Now</button> <button class=mobile-menu-btn id=mobileMenuBtn><span></span> <span></span>
+                        <span></span></button></div>
             </div>
         </div>
     </nav>
-
-    <!-- Gallery Hero Section -->
-    <section class="gallery-hero">
-        <div class="gallery-hero-overlay"></div>
-        <div class="container">
-            <div class="gallery-hero-content">
-                <span class="section-label">Explore Sri Lanka</span>
-                <h1 class="gallery-hero-title">Photo Gallery</h1>
-                <p class="gallery-hero-description">Discover the breathtaking beauty of Sri Lanka through our lens. From
-                    ancient temples to pristine beaches, wildlife safaris to tea plantations.</p>
+    <section class=gallery-hero>
+        <div class=gallery-hero-overlay></div>
+        <div class=container>
+            <div class=gallery-hero-content><span class=section-label>Explore Sri Lanka</span>
+                <h1 class=gallery-hero-title>Photo Gallery</h1>
+                <p class=gallery-hero-description>Discover the breathtaking beauty of Sri Lanka through our lens. From
+                    ancient temples to pristine beaches, wildlife safaris to tea plantations.
             </div>
         </div>
     </section>
-
-    <!-- Gallery Filter & Grid -->
-    <section class="gallery-section">
-        <div class="container">
-
-            <!-- Filter Buttons -->
-            <div class="gallery-filter">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-globe"></i> All Photos
-                </button>
-                <button class="filter-btn" data-filter="beaches">
-                    <i class="fas fa-umbrella-beach"></i> Beaches
-                </button>
-                <button class="filter-btn" data-filter="temples">
-                    <i class="fas fa-place-of-worship"></i> Temples
-                </button>
-                <button class="filter-btn" data-filter="wildlife">
-                    <i class="fas fa-paw"></i> Wildlife
-                </button>
-                <button class="filter-btn" data-filter="tea">
-                    <i class="fas fa-leaf"></i> Tea Country
-                </button>
-                <button class="filter-btn" data-filter="culture">
-                    <i class="fas fa-landmark"></i> Culture
-                </button>
-                <button class="filter-btn" data-filter="scenic">
-                    <i class="fas fa-mountain"></i> Scenic
-                </button>
-            </div>
-
-            <!-- Gallery Grid -->
-            <div class="gallery-grid" id="galleryGrid">
-
-                <!-- Beach Photos -->
-                <div class="gallery-item" data-category="beaches">
-                    <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800"
-                        alt="Mirissa Beach - Palm trees and golden sand" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+    <section class=gallery-section>
+        <div class=container>
+            <div class=gallery-filter><button class="filter-btn active" data-filter=all><i class="fas fa-globe"></i> All
+                    Photos</button> <button class=filter-btn data-filter=beaches><i class="fas fa-umbrella-beach"></i>
+                    Beaches</button> <button class=filter-btn data-filter=temples><i
+                        class="fas fa-place-of-worship"></i> Temples</button> <button class=filter-btn
+                    data-filter=wildlife><i class="fas fa-paw"></i> Wildlife</button> <button class=filter-btn
+                    data-filter=tea><i class="fas fa-leaf"></i> Tea Country</button> <button class=filter-btn
+                    data-filter=culture><i class="fas fa-landmark"></i> Culture</button> <button class=filter-btn
+                    data-filter=scenic><i class="fas fa-mountain"></i> Scenic</button></div>
+            <div class=gallery-grid id=galleryGrid>
+                <div class=gallery-item data-category=beaches><img alt="Mirissa Beach - Palm trees and golden sand"
+                        src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Mirissa Beach</h3>
-                            <p>Southern Coast Paradise</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(0)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Southern Coast Paradise
+                        </div><button class=gallery-view-btn onclick=openLightbox(0)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="beaches">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
-                        alt="Unawatuna Beach - Turquoise waters" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=beaches><img alt="Unawatuna Beach - Turquoise waters"
+                        src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Unawatuna Beach</h3>
-                            <p>Tropical Paradise</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(1)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Tropical Paradise
+                        </div><button class=gallery-view-btn onclick=openLightbox(1)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="beaches">
-                    <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800"
-                        alt="Bentota Beach - Sunset view" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=beaches><img alt="Bentota Beach - Sunset view"
+                        src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Bentota Beach</h3>
-                            <p>Golden Sunset</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(2)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Golden Sunset
+                        </div><button class=gallery-view-btn onclick=openLightbox(2)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <!-- Temple Photos -->
-                <div class="gallery-item" data-category="temples culture">
-                    <img src="https://images.unsplash.com/photo-1588413181332-01de799b92d6?w=800"
-                        alt="Temple of the Tooth - Kandy" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category="temples culture"><img alt="Temple of the Tooth - Kandy"
+                        src="https://images.unsplash.com/photo-1588413181332-01de799b92d6?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Temple of the Tooth</h3>
-                            <p>Sacred Buddhist Site - Kandy</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(3)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Sacred Buddhist Site - Kandy
+                        </div><button class=gallery-view-btn onclick=openLightbox(3)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="temples culture">
-                    <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=800"
-                        alt="Buddhist temple with monks" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category="temples culture"><img alt="Buddhist temple with monks"
+                        src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Buddhist Temple</h3>
-                            <p>Ancient Architecture</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(4)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Ancient Architecture
+                        </div><button class=gallery-view-btn onclick=openLightbox(4)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="temples culture">
-                    <img src="https://images.unsplash.com/photo-1591702623321-c0690a1ce9c9?w=800"
-                        alt="Dambulla Cave Temple" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category="temples culture"><img alt="Dambulla Cave Temple"
+                        src="https://images.unsplash.com/photo-1591702623321-c0690a1ce9c9?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Dambulla Cave Temple</h3>
-                            <p>UNESCO World Heritage</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(5)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>UNESCO World Heritage
+                        </div><button class=gallery-view-btn onclick=openLightbox(5)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <!-- Culture & Heritage -->
-                <div class="gallery-item" data-category="culture">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
-                        alt="Sigiriya Rock Fortress" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=culture><img alt="Sigiriya Rock Fortress"
+                        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Sigiriya Rock</h3>
-                            <p>Ancient Rock Fortress</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(6)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Ancient Rock Fortress
+                        </div><button class=gallery-view-btn onclick=openLightbox(6)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="culture">
-                    <img src="https://images.unsplash.com/photo-1608214624418-d71a11015a3f?w=800"
-                        alt="Ancient ruins in Polonnaruwa" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=culture><img alt="Ancient ruins in Polonnaruwa"
+                        src="https://images.unsplash.com/photo-1608214624418-d71a11015a3f?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Polonnaruwa Ruins</h3>
-                            <p>Ancient Kingdom</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(7)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Ancient Kingdom
+                        </div><button class=gallery-view-btn onclick=openLightbox(7)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <!-- Wildlife Photos -->
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
-                        alt="Sri Lankan Elephant" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=wildlife><img alt="Sri Lankan Elephant"
+                        src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Wild Elephants</h3>
-                            <p>Yala National Park</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(8)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Yala National Park
+                        </div><button class=gallery-view-btn onclick=openLightbox(8)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=800"
-                        alt="Sri Lankan Leopard" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=wildlife><img alt="Sri Lankan Leopard"
+                        src="https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Sri Lankan Leopard</h3>
-                            <p>Rare Wildlife Encounter</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(9)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Rare Wildlife Encounter
+                        </div><button class=gallery-view-btn onclick=openLightbox(9)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.unsplash.com/photo-1551316679-9c6ae9dec224?w=800" alt="Peacock in nature"
-                        loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=wildlife><img alt="Peacock in nature"
+                        src="https://images.unsplash.com/photo-1551316679-9c6ae9dec224?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Wildlife Safari</h3>
-                            <p>Exotic Birds & Animals</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(10)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Exotic Birds & Animals
+                        </div><button class=gallery-view-btn onclick=openLightbox(10)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <!-- Tea Country -->
-                <div class="gallery-item" data-category="tea scenic">
-                    <img src="https://images.unsplash.com/photo-1604926288183-7226b90300fa?w=800"
-                        alt="Tea plantations in Nuwara Eliya" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category="tea scenic"><img alt="Tea plantations in Nuwara Eliya"
+                        src="https://images.unsplash.com/photo-1604926288183-7226b90300fa?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Tea Plantations</h3>
-                            <p>Nuwara Eliya Highlands</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(11)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Nuwara Eliya Highlands
+                        </div><button class=gallery-view-btn onclick=openLightbox(11)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="tea scenic">
-                    <img src="https://images.unsplash.com/photo-1563979334088-816d5fad0af4?w=800"
-                        alt="Tea picker at work" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category="tea scenic"><img alt="Tea picker at work"
+                        src="https://images.unsplash.com/photo-1563979334088-816d5fad0af4?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Tea Picking</h3>
-                            <p>Traditional Ceylon Tea</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(12)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Traditional Ceylon Tea
+                        </div><button class=gallery-view-btn onclick=openLightbox(12)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <!-- Scenic Views -->
-                <div class="gallery-item" data-category="scenic">
-                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800" alt="Nine Arch Bridge"
-                        loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=scenic><img alt="Nine Arch Bridge"
+                        src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Nine Arch Bridge</h3>
-                            <p>Iconic Railway Bridge</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(13)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Iconic Railway Bridge
+                        </div><button class=gallery-view-btn onclick=openLightbox(13)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="scenic">
-                    <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800"
-                        alt="Mountain landscape" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=scenic><img alt="Mountain landscape"
+                        src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Hill Country</h3>
-                            <p>Misty Mountains</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(14)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Misty Mountains
+                        </div><button class=gallery-view-btn onclick=openLightbox(14)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="scenic beaches">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Coastal sunset"
-                        loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category="scenic beaches"><img alt="Coastal sunset"
+                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Coastal Sunset</h3>
-                            <p>Southern Province</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(15)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Southern Province
+                        </div><button class=gallery-view-btn onclick=openLightbox(15)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <!-- Additional Culture -->
-                <div class="gallery-item" data-category="culture">
-                    <img src="https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?w=800"
-                        alt="Traditional dancers" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=culture><img alt="Traditional dancers"
+                        src="https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Traditional Dance</h3>
-                            <p>Cultural Performance</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(16)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Cultural Performance
+                        </div><button class=gallery-view-btn onclick=openLightbox(16)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="gallery-item" data-category="scenic">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800" alt="Rice paddy fields"
-                        loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
+                <div class=gallery-item data-category=scenic><img alt="Rice paddy fields"
+                        src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800" loading=lazy>
+                    <div class=gallery-overlay>
+                        <div class=gallery-info>
                             <h3>Rice Paddies</h3>
-                            <p>Rural Landscapes</p>
-                        </div>
-                        <button class="gallery-view-btn" onclick="openLightbox(17)">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
+                            <p>Rural Landscapes
+                        </div><button class=gallery-view-btn onclick=openLightbox(17)><i
+                                class="fas fa-search-plus"></i></button>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">
-            <i class="fas fa-times"></i>
-        </button>
-        <button class="lightbox-prev" onclick="changeLightboxImage(-1)">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="lightbox-next" onclick="changeLightboxImage(1)">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="lightbox-content">
-            <img id="lightboxImage" src="" alt="">
-            <div class="lightbox-caption" id="lightboxCaption">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxDescription"></p>
+    <div class=lightbox id=lightbox><button class=lightbox-close onclick=closeLightbox()><i
+                class="fas fa-times"></i></button> <button class=lightbox-prev onclick=changeLightboxImage(-1)><i
+                class="fas fa-chevron-left"></i></button> <button class=lightbox-next onclick=changeLightboxImage(1)><i
+                class="fas fa-chevron-right"></i></button>
+        <div class=lightbox-content><img alt="" src="" id=lightboxImage>
+            <div class=lightbox-caption id=lightboxCaption>
+                <h3 id=lightboxTitle></h3>
+                <p id=lightboxDescription>
             </div>
         </div>
-        <div class="lightbox-counter" id="lightboxCounter">1 / 18</div>
+        <div class=lightbox-counter id=lightboxCounter>1 / 18</div>
     </div>
-
-    <!-- CTA Section -->
-    <section class="gallery-cta">
-        <div class="container">
-            <div class="cta-content-center">
-                <i class="fas fa-camera-retro cta-icon"></i>
+    <section class=gallery-cta>
+        <div class=container>
+            <div class=cta-content-center><i class="fas cta-icon fa-camera-retro"></i>
                 <h2>Ready to Experience These Places?</h2>
-                <p>Book your Sri Lankan adventure today and create your own memories</p>
-                <div class="cta-buttons">
-                    <button onclick="openWhatsApp()" class="btn-cta-primary">
-                        <i class="fab fa-whatsapp"></i>
-                        Book Your Tour Now
-                    </button>
-                    <a href="index.html#tours" class="btn-cta-secondary">
-                        <i class="fas fa-map-marked-alt"></i>
-                        View Tour Packages
-                    </a>
-                </div>
+                <p>Book your Sri Lankan adventure today and create your own memories
+                <div class=cta-buttons><button class=btn-cta-primary onclick=openWhatsApp()><i
+                            class="fab fa-whatsapp"></i> Book Your Tour Now</button> <a href=index.html#tours
+                        class=btn-cta-secondary><i class="fas fa-map-marked-alt"></i> View Tour Packages</a></div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer-modern">
-        <div class="container">
-            <div class="footer-main">
-
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-taxi"></i>
-                        </div>
-                        <div class="logo-text">
-                            <h3>WEGO TAXI</h3>
-                            <span>Sri Lanka Tours</span>
+    <footer class=footer-modern>
+        <div class=container>
+            <div class=footer-main>
+                <div class=footer-col>
+                    <div class=footer-logo>
+                        <div class=logo-icon><i class="fas fa-taxi"></i></div>
+                        <div class=logo-text>
+                            <h3>WEGO TAXI</h3><span>Sri Lanka Tours</span>
                         </div>
                     </div>
-                    <p class="footer-desc">Premium taxi and tour services across Sri Lanka. Your trusted travel partner
-                        for unforgettable experiences.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    <p class=footer-desc>Premium taxi and tour services across Sri Lanka. Your trusted travel partner
+                        for unforgettable experiences.
+                    <div class=footer-social><a href=#><i class="fab fa-facebook-f"></i></a> <a href=#><i
+                                class="fab fa-instagram"></i></a> <a href=#><i class="fab fa-tripadvisor"></i></a> <a
+                            href=#><i class="fab fa-whatsapp"></i></a></div>
                 </div>
-
-                <div class="footer-col">
+                <div class=footer-col>
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#tours">Tours</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                    <ul class=footer-links>
+                        <li><a href=index.html#home>Home</a>
+                        <li><a href=index.html#about>About Us</a>
+                        <li><a href=index.html#services>Services</a>
+                        <li><a href=index.html#tours>Tours</a>
+                        <li><a href=gallery.html>Gallery</a>
+                        <li><a href=index.html#contact>Contact</a>
                     </ul>
                 </div>
-
-                <div class="footer-col">
+                <div class=footer-col>
                     <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html#services">Airport Transfers</a></li>
-                        <li><a href="index.html#services">City Tours</a></li>
-                        <li><a href="index.html#services">Day Excursions</a></li>
-                        <li><a href="index.html#services">Multi-Day Tours</a></li>
-                        <li><a href="index.html#services">Custom Packages</a></li>
+                    <ul class=footer-links>
+                        <li><a href=index.html#services>Airport Transfers</a>
+                        <li><a href=index.html#services>City Tours</a>
+                        <li><a href=index.html#services>Day Excursions</a>
+                        <li><a href=index.html#services>Multi-Day Tours</a>
+                        <li><a href=index.html#services>Custom Packages</a>
                     </ul>
                 </div>
-
-                <div class="footer-col">
+                <div class=footer-col>
                     <h4>Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+393455363479">+39 345 536 3479</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:Info@wegosrilanka.com">Info@wegosrilanka.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Colombo, Sri Lanka</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            <span>Available 24/7</span>
-                        </li>
+                    <ul class=footer-contact>
+                        <li><i class="fas fa-phone"></i> <a href=tel:+393455363479>+39 345 536 3479</a>
+                        <li><i class="fas fa-envelope"></i> <a
+                                href=mailto:Info@wegosrilanka.com>Info@wegosrilanka.com</a>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Colombo, Sri Lanka</span>
+                        <li><i class="fas fa-clock"></i> <span>Available 24/7</span>
                     </ul>
                 </div>
-
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Wego Taxi Sri Lanka. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                </div>
+            <div class=footer-bottom>
+                <p>© 2026 Wego Taxi Sri Lanka. All rights reserved.
+                <div class=footer-bottom-links><a href=#>Privacy Policy</a> <a href=#>Terms & Conditions</a></div>
             </div>
         </div>
-    </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/393455363479" class="whatsapp-float-modern" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Scroll to Top -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-    <script src="gallery.js"></script>
-
-</body>
-
-</html>
+    </footer><a href=https://wa.me/393455363479 class=whatsapp-float-modern aria-label="Chat on WhatsApp"
+        target=_blank><i class="fab fa-whatsapp"></i> </a><button class=scroll-to-top id=scrollToTop
+        aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    <script src=script.js></script>
+    <script src=gallery.js></script>

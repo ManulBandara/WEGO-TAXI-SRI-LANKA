@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://wegosrilanka.com/sitemap.xml
+Sitemap: https://wegosrilankatravel.com/sitemap.xml
 
 # Block admin areas if any
 Disallow: /admin/
