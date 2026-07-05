@@ -1,126 +1,95 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Lanka Taxi & Tours Blog</title>
+</head>
 
-body{
-background:#f7f7f7;
-}
+<body style="margin:0;font-family:Arial,sans-serif;background:#f5f5f5;">
 
-header{
-background:#0c4b33;
-color:#fff;
-padding:20px 0;
-}
+<!-- Header -->
+<div style="background:#0B6E4F;color:white;padding:20px 50px;display:flex;justify-content:space-between;align-items:center;">
+    <h2 style="margin:0;">Sri Lanka Taxi & Tours</h2>
 
-.container{
-width:90%;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+    <div>
+        <a href="#" style="color:white;text-decoration:none;margin:0 15px;font-weight:bold;">Home</a>
+        <a href="#" style="color:white;text-decoration:none;margin:0 15px;font-weight:bold;">Tours</a>
+        <a href="#" style="color:white;text-decoration:none;margin:0 15px;font-weight:bold;">Taxi</a>
+        <a href="#" style="color:white;text-decoration:none;margin:0 15px;font-weight:bold;">Blog</a>
+        <a href="#" style="color:white;text-decoration:none;margin:0 15px;font-weight:bold;">Contact</a>
+    </div>
+</div>
 
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:20px;
-font-weight:600;
-}
+<!-- Hero -->
+<div style="background:url('images/banner.jpg') center/cover;height:350px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;">
+    <h1 style="font-size:50px;margin-bottom:10px;">Travel Blog</h1>
+    <p style="font-size:20px;">Explore Sri Lanka with Local Taxi & Tour Experts</p>
+</div>
 
-.hero{
-height:300px;
-background:url(images/banner.jpg) center/cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
+<!-- Blog Cards -->
+<div style="width:90%;margin:50px auto;display:flex;flex-wrap:wrap;justify-content:space-between;">
 
-.hero h2{
-font-size:45px;
-margin-bottom:15px;
-}
+    <div style="width:31%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.15);margin-bottom:30px;">
+        <img src="images/sigiriya.jpg" style="width:100%;height:220px;object-fit:cover;">
+        <div style="padding:20px;">
+            <h3 style="color:#0B6E4F;">Top 10 Places to Visit in Sri Lanka</h3>
+            <p style="color:#555;line-height:1.6;">Discover Sigiriya, Ella, Kandy, Mirissa, Galle and many more amazing destinations.</p>
+            <a href="#" style="background:#ff9800;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Read More</a>
+        </div>
+    </div>
 
-.hero p{
-font-size:18px;
-}
+    <div style="width:31%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.15);margin-bottom:30px;">
+        <img src="images/ella.jpg" style="width:100%;height:220px;object-fit:cover;">
+        <div style="padding:20px;">
+            <h3 style="color:#0B6E4F;">Best Time to Visit Ella</h3>
+            <p style="color:#555;line-height:1.6;">Everything you need to know before planning your trip to Ella.</p>
+            <a href="#" style="background:#ff9800;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Read More</a>
+        </div>
+    </div>
 
-.blog-container{
-width:90%;
-margin:50px auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
+    <div style="width:31%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.15);margin-bottom:30px;">
+        <img src="images/yala.jpg" style="width:100%;height:220px;object-fit:cover;">
+        <div style="padding:20px;">
+            <h3 style="color:#0B6E4F;">Yala Safari Guide</h3>
+            <p style="color:#555;line-height:1.6;">Experience Sri Lanka's wildlife including leopards, elephants and bears.</p>
+            <a href="#" style="background:#ff9800;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Read More</a>
+        </div>
+    </div>
 
-.card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.1);
-transition:.3s;
-}
+    <div style="width:31%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.15);margin-bottom:30px;">
+        <img src="images/kandy.jpg" style="width:100%;height:220px;object-fit:cover;">
+        <div style="padding:20px;">
+            <h3 style="color:#0B6E4F;">Kandy City Tour</h3>
+            <p style="color:#555;line-height:1.6;">Visit the Temple of the Tooth, Botanical Gardens and scenic viewpoints.</p>
+            <a href="#" style="background:#ff9800;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Read More</a>
+        </div>
+    </div>
 
-.card:hover{
-transform:translateY(-8px);
-}
+    <div style="width:31%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.15);margin-bottom:30px;">
+        <img src="images/galle.jpg" style="width:100%;height:220px;object-fit:cover;">
+        <div style="padding:20px;">
+            <h3 style="color:#0B6E4F;">Galle Fort Guide</h3>
+            <p style="color:#555;line-height:1.6;">Walk through colonial streets, enjoy cafés and breathtaking ocean views.</p>
+            <a href="#" style="background:#ff9800;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Read More</a>
+        </div>
+    </div>
 
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
+    <div style="width:31%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.15);margin-bottom:30px;">
+        <img src="images/mirissa.jpg" style="width:100%;height:220px;object-fit:cover;">
+        <div style="padding:20px;">
+            <h3 style="color:#0B6E4F;">Whale Watching in Mirissa</h3>
+            <p style="color:#555;line-height:1.6;">Enjoy unforgettable whale and dolphin watching experiences.</p>
+            <a href="#" style="background:#ff9800;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Read More</a>
+        </div>
+    </div>
 
-.card h3{
-padding:20px;
-color:#0c4b33;
-}
+</div>
 
-.card p{
-padding:0 20px;
-line-height:1.6;
-color:#555;
-}
+<!-- Footer -->
+<div style="background:#0B6E4F;color:white;text-align:center;padding:20px;font-size:16px;">
+    © 2026 Sri Lanka Taxi & Tours | All Rights Reserved.
+</div>
 
-.card a{
-display:inline-block;
-margin:20px;
-padding:10px 18px;
-background:#ff9800;
-color:white;
-text-decoration:none;
-border-radius:5px;
-}
-
-.card a:hover{
-background:#e68900;
-}
-
-footer{
-background:#0c4b33;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:50px;
-}
-
-@media(max-width:768px){
-
-.container{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-.hero h2{
-font-size:35px;
-}
-
-}
+</body>
+</html>
